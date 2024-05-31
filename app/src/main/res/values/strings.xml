@@ -1,0 +1,11 @@
+<resources>
+    <string name="calculator_Belal" />
+
+    <string-array name="operations_array">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
+        <item>^</item>
+    </string-array>
+</resources>
