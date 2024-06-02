@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         float num1 = Float.parseFloat(num1Str);
         float num2 = Float.parseFloat(num2Str);
 
-        float result;
+        float result = 0;
         String operation = operationSpinner.getSelectedItem().toString();
 
         try {
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case "/":
                     if (num2 == 0) {
-                        result = 0; // Division by zero, result is zero
+                       Toast.makeText(this,"Division by zero",Toast.LENGTH_SHORT).show();
                     } else {
                         result = num1 / num2;
                     }
